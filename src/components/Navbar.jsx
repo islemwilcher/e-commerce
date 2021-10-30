@@ -9,6 +9,7 @@ import Badge from '@material-ui/core/badge'
 const Container = styled.div`
     height: 12vh;
     background-color: whitesmoke;
+    z-index: 10;
 `
 
 const Wrapper = styled.div`

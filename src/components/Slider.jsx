@@ -4,15 +4,16 @@ import { BiRightArrowCircle, BiLeftArrowCircle } from 'react-icons/bi'
 import styled from "styled-components"
 
 import HomePic from '../assests/homepic.jpg'
-import Ipad from '../assests/ipad.jpg'
-import AppleWatch from '../assests/appleWatch.jpg'
+import Watch from '../assests/slideOne.jpg'
+import Accessory from '../assests/slideTwo.jpg'
 
 const Container = styled.div`
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    position: relative;
-`
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+`;
 
 const Arrow = styled.div`
     width: 30px;
@@ -32,44 +33,49 @@ const Arrow = styled.div`
 `
 
 const Wrapper = styled.div`
-    height: 100%;
-    width: 100vw;
-`
+  height: 100%;
+  display: flex;
+`; 
+
 const Slide = styled.div`
-    display: flex;
-    align-items: center;
-    width: 100%;
-`
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+`;
+
 const ImageContainer = styled.div`
-    position: relativ;
-`
+  height: 100%;
+  flex: 1;
+`;
+
 const Image = styled.img`
-    width: 100% !important;
-    height: 80%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    
-`
+  height: 100%;
+`;
+
 const InfoContainer = styled.div`
-    position: absolute;
-    top:0;
-    left: 30px;
-`
-const Title = styled.h3`
-    margin-top: 30px;
-    font-size: 70px;
-`
+  flex: 1;
+  padding: 50px;
+`;
+
+const Title = styled.h1`
+  font-size: 70px;
+  line-break: break-all;
+`;
+
 const Desc = styled.p`
-    margin: 30px 0px;
-    font-size: 20px;
-    font-weight: 500;
-`
+  margin: 50px 0px;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 3px;
+`;
+
 const Button = styled.button`
-    padding: 10px;
-    font-size: 20px;
-    backgrouns-color: transparent;
-    cursor: pointer;
-`
+  padding: 10px;
+  font-size: 20px;
+  background-color: transparent;
+  cursor: pointer;
+`;
 
 const Slider = () => {
     return (
@@ -81,12 +87,34 @@ const Slider = () => {
                 <Slide>
                     <ImageContainer>
                         <Image width='100%' height='80%' src={HomePic} />
-                        <InfoContainer>
-                            <Title>DEVICES,WATCHES..</Title>
-                            <Desc>WANT TO UPGRADE YOUR DEVICES! GET 20% OFF FOR NEW ARRIVALS.</Desc>
-                            <Button>Shop now</Button>
-                        </InfoContainer>
                     </ImageContainer>
+                    <InfoContainer>
+                        <Title>LAPTOP, XBOX, DEVICES..</Title>
+                        <Desc>WANT TO UPGRADE YOUR DEVICES! GET 20% OFF FOR NEW ARRIVALS.</Desc>
+                        <Button>Shop now</Button>
+                    </InfoContainer>
+                </Slide>
+                <Slide>
+                    <ImageContainer>
+                        <Image width='100%' height='80%' src={Watch} />
+                        
+                    </ImageContainer>
+                    <InfoContainer>
+                        <Title>WATCHES..</Title>
+                        <Desc>SMART OR CLASSIC! YOU COULD FIND THEM ALL.</Desc>
+                        <Button>Shop now</Button>
+                    </InfoContainer>
+                </Slide>
+                <Slide>
+                    <ImageContainer>
+                        <Image width='100%' height='80%' src={Accessory} />
+                        
+                    </ImageContainer>
+                    <InfoContainer>
+                        <Title>Accessory</Title>
+                        <Desc>Accessory TO MAKE UR DEVICES LOOKS PERFECT AND PROTECTED.</Desc>
+                        <Button>Shop now</Button>
+                    </InfoContainer>
                 </Slide>
             </Wrapper>
             <Arrow direction='right'>
