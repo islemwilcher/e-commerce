@@ -87,7 +87,7 @@ const Navbar = () => {
                     <MenuItem>REGESTER</MenuItem>
                     <MenuItem>sign in</MenuItem>
                     <MenuItem>
-                    <Badge badgeContent={0} color='primary'>
+                    <Badge badgeContent={1} color='primary'>
                         <IoMdCart size='25px' />
                     </Badge>
                     </MenuItem>
