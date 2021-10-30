@@ -7,7 +7,7 @@ import { IoMdCart } from 'react-icons/io'
 import Badge from '@material-ui/core/badge'
 
 const Container = styled.div`
-    height: 60px;
+    height: 80px;
     background-color: whitesmoke;
 `
 
