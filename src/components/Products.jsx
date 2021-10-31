@@ -26,8 +26,8 @@ const Products = () => {
         <Title>POPULAR</Title>
         <Container container alignItems="stretch">
             {popularProducts.map((item) => (
-            <Grid className='grid' key={item.id} item xs={12} sm={6} md={3}>
-                <Product item={item} />
+            <Grid className='grid' item xs={12} sm={6} md={3}>
+                <Product item={item} key={item.id} />
             </Grid>
             ))}
         </Container>
