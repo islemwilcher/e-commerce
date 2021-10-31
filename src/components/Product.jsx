@@ -17,6 +17,7 @@ const Info = styled.div`
     align-items: center;
     justify-content: center;
     z-index: 4;
+    transition: all 0.5s ease;
 `
 const Circul = styled.div`
     opacity: 0;
@@ -29,6 +30,7 @@ const Circul = styled.div`
     z-index: 3;
 `
 const Container = styled.div`
+    cursor: pointer;
     flex: 1;
     margin: 0px 10px;
     box-shadow: 1px 1px 2px gray;
