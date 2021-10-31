@@ -14,11 +14,18 @@ const Title = styled.h1`
     font-size: 50px;
     font-weight: 600;
 `
+const Desc = styled.p`
+    width: 50%;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 3px;
+`
 
 const About = () => {
     return (
         <Container>
             <Title>About</Title>
+            <Desc>THERE ARE MANY OF THE ONLINE STORES, OURE IS ONE OF THE MOST POWERFUL, WE PROVIDE OUR COSTUMERS A LOT OF PREVILEGES, DISCOUNT, FREE SHIPPING AND A LOT OF THE NEWST PRODUCTS </Desc>
         </Container>
     )
 }
