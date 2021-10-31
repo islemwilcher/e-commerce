@@ -23,7 +23,7 @@ const Categories = () => {
         <Container>
             
             {CategoriesData.map(item => (
-                <CategoriesItem item={item} />
+                <CategoriesItem item={item} key={item.id} />
             ))}
         </Container>
         </>

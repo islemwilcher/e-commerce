@@ -2,7 +2,7 @@
 import PhoneC from '../assests/phoneCatego.jpg'
 import WatchC from '../assests/watchCatego.jpg'
 import LaptopC from '../assests/laptopCatego.jpg'
-import CameraC from '../assests/cameraCatego.jpg'
+import XboxC from '../assests/xboxCatego.jpg'
 import AccessoryC from '../assests/accessoryCatego.jpg'
 
 export const CategoriesData = [
@@ -28,7 +28,33 @@ export const CategoriesData = [
     },
     {
         id: 5,
-        image: CameraC,
-        title: 'Camera',
+        image: XboxC,
+        title: 'XBOX',
+    },
+]
+export const popularProducts = [
+    {
+        id: 1,
+        image: PhoneC,
+    },
+    {
+        id: 2,
+        image: WatchC,
+    },
+    {
+        id: 3,
+        image: LaptopC,
+    },
+    {
+        id: 4,
+        image: AccessoryC,
+    },
+    {
+        id: 5,
+        image: XboxC,
+    },
+    {
+        id: 5,
+        image: XboxC,
     },
 ]
