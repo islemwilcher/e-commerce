@@ -37,6 +37,22 @@ const Media = styled.div`
 `
 const Center = styled.div`
     flex: 1;
+    padding: 20px;
+    border-right: 1px solid gray;
+`
+const Links = styled.div`
+    display: flex;
+`
+const UL = styled.div`
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+`
+const LI = styled.li`
+    padding: 0;
+    margin: 5px 30px;
+    list-style: none; 
 `
 const Right = styled.div`
     flex: 1;
@@ -64,7 +80,25 @@ const Footer = () => {
                     </Media>
                 </MediaContainer>
             </Left>
-            <Center></Center>
+            <Center>
+                <Title>USEFUL LINKS</Title>
+                <Links>
+                <UL>
+                    <LI>Home</LI>
+                    <LI>Newest</LI>
+                    <LI>Popular</LI>
+                </UL>
+                <UL>
+                    <LI>Phone</LI>
+                    <LI>Ipad</LI>
+                    <LI>Xbos</LI>
+                    </UL>
+                <UL>
+                    <LI>Accessory</LI>
+                    <LI>Watch</LI>
+                    <LI>Products</LI>
+                </UL></Links>
+            </Center>
             <Right></Right>
         </Container>
     )
