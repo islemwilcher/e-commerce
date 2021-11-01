@@ -11,17 +11,26 @@ const Container = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media(max-width: 768px) {
+        height: 40vh;
+    }
 `
 const Title = styled.h1`
     font-size: 24px;
     font-weight: 600;
     width: 50%;
+    @media(max-width: 768px) {
+        width: 90%;
+    }
 `
 const InputContainer = styled.div`
     display: flex;
     width: 50%;
     background-color: transparent;
     margin: 30px 0px;
+    @media(max-width: 768px) {
+        width: 90%;
+    }
 `
 const Input = styled.input`
     flex: 8;

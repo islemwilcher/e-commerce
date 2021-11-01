@@ -10,6 +10,9 @@ const Container = styled.div`
     height: 12vh;
     background-color: whitesmoke;
     z-index: 10;
+    @media(max-width: 768px) {
+        height: 20vh;
+    }
 `
 
 const Wrapper = styled.div`
@@ -17,6 +20,13 @@ const Wrapper = styled.div`
     display:flex;
     justify-content: space-between;
     align-items: center;
+
+    @media(max-width: 768px) {
+        flex-direction: column-reverse;
+        
+    justify-content: center;
+        height: 20vh !important;
+    }
 `
 
 // left side
@@ -26,6 +36,9 @@ const Left = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media(max-width: 768px) {
+        width: 100%;
+    }
 `
 const Language = styled.span`
     font-size: 14px;

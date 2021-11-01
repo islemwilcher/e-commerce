@@ -10,12 +10,18 @@ const Container = styled.div`
 
     @media(max-width: 768px) {
         flex-direction: column;
+        justify-content: center;
     }
 `
 const Left = styled.div`
     flex: 1;
     padding: 20px;
     border-right: 1px solid gray;
+    @media(max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 `
 const Title = styled.h3`
     font-size: 30px
@@ -24,6 +30,9 @@ const Desc = styled.p`
     font-size: 14px;
     font-weight: 500;
     margin: 20px 0px;
+    @media(max-width: 768px) {
+        width: 80%;
+    }
 `
 const MediaContainer = styled.div`
     display: flex;
@@ -45,6 +54,11 @@ const Center = styled.div`
     flex: 1;
     padding: 20px;
     border-right: 1px solid gray;
+    @media(max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 `
 const Links = styled.div`
     display: flex;
@@ -65,6 +79,11 @@ const LI = styled.li`
 const Right = styled.div`
     flex: 1;
     padding: 20px;
+    @media(max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 `
 
 
