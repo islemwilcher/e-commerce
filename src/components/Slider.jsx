@@ -1,4 +1,5 @@
 
+import { useHistory } from 'react-router-dom'
 import { useState } from 'react'
 import { BiRightArrowCircle, BiLeftArrowCircle } from 'react-icons/bi'
 
@@ -49,7 +50,7 @@ const Slide = styled.div`
   z-index: 2;
 
   @media(max-width: 768px) {
-    fposition: relative;
+    position: relative;
     display: block;
   }
 `
@@ -84,6 +85,7 @@ const Image = styled.img`
 const InfoContainer = styled.div`
   flex: 1;
   padding: 50px;
+  z-index: 4 !important;
   @media(max-width: 768px) {
     position: absolute;
     top: 10px;
@@ -133,6 +135,12 @@ const Button = styled.button`
 const Slider = () => {
     const [slideIndex, setSlideIndex] = useState(0)
 
+    const history = useHistory()
+
+    const handleShopClick = () => {
+        history.push(`/products`)
+    }
+
     const handleClick = (direction) => {
         if(direction === 'left') {
             setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 2 )
@@ -157,7 +165,7 @@ const Slider = () => {
                         <InfoContainer>
                             <Title>{item.title}</Title>
                             <Desc>{item.desc}</Desc>
-                            <Button>Shop now</Button>
+                            <Button onClick={handleShopClick}>Shop now</Button>
                         </InfoContainer>
                     </Slide>
                 ))}

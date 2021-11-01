@@ -16,14 +16,10 @@ const Container = styled.div`
         margin-top: 30px;
     }
 `
-const Title = styled.h1`
-    margin: 40px auto 30px 30px;
-    font-weight: 500;
-`
+
 const Products = () => {
     return (
         <>
-        <Title>POPULAR</Title>
         <Container container alignItems="stretch">
             {popularProducts.map((item) => (
             <Grid className='grid' item xs={12} sm={6} md={3}>

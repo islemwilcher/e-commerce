@@ -4,6 +4,7 @@ import { FaFacebookF, FaPinterestP, FaMapMarkerAlt } from 'react-icons/fa'
 import { BsInstagram, BsTwitter, BsTelephoneOutboundFill } from 'react-icons/bs'
 import { HiMail } from 'react-icons/hi'
 
+
 const Container = styled.div`
     display: flex;
     flex-direction: row;

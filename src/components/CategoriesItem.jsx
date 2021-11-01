@@ -1,4 +1,5 @@
 
+import { useHistory } from 'react-router-dom'
 import styled from 'styled-components'
 
 const Container = styled.div`
@@ -11,6 +12,8 @@ const Image = styled.img`
     width: 100%
 `
 const Info = styled.div`
+display: flex;
+flex-direction: column;
 `
 const Title = styled.h2`
     margin: 5px 0px;
@@ -26,12 +29,16 @@ const Button = styled.button`
 `
 
 const CategoriesItem = ({ item }) => {
+    const history = useHistory()
+    const handleClick = (title) => {
+        history.push(`/products/${title}`)
+    }
     return (
         <Container>
             <Image src={item.image} />
             <Info>
                 <Title>{item.title}</Title>
-                <Button>SHOP NOW</Button>
+                <Button onClick={() => handleClick(item.title)}>SHOP NOW</Button>
             </Info>
         </Container>
     )

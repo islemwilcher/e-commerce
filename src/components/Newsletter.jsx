@@ -4,15 +4,19 @@ import styled from "styled-components"
 import { HiMail } from 'react-icons/hi'
 
 const Container = styled.div`
-    width: 100%;
+    width: 80%;
+    margin: 30px auto;
     height: 60vh;
-    background-color: #F2F3F4;
+    border: 2px solid rgba(173, 216, 230, 0.5);
+    box-shadow: 1px 1px 6px rgba(173, 216, 230, 0.8);
+    background-color: rgba(173, 216, 230, 0.3);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     @media(max-width: 768px) {
         height: 40vh;
+        width: 98%;
     }
 `
 const Title = styled.h1`

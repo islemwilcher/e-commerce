@@ -16,16 +16,10 @@ const Container = styled.div`
         margin-top: 30px;
     }
 `
-const Title = styled.h1`
-    margin: 40px auto 0 30px;
-    font-weight: 500;
-
-`
 
 const Categories = () => {
     return (
         <>
-        <Title>CATEGORIES</Title>
         <Container container alignItems="stretch">
             {CategoriesData.map((item) => (
                 <Grid className='grid' item xs={12} sm={6} md={3}>
