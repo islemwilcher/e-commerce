@@ -6,6 +6,11 @@ import { HiMail } from 'react-icons/hi'
 
 const Container = styled.div`
     display: flex;
+    flex-direction: row;
+
+    @media(max-width: 768px) {
+        flex-direction: column;
+    }
 `
 const Left = styled.div`
     flex: 1;
@@ -105,7 +110,7 @@ const Footer = () => {
                 </Links>
             </Center>
             <Right>
-            <Title>USEFUL LINKS</Title>
+            <Title>CONTACTS</Title>
             <UL>
                     <LI><BsTelephoneOutboundFill size='16' style={{ marginRight: '10px'}} />+123 456 789</LI>
                     <LI><HiMail size='16' style={{ marginRight: '10px'}} />contact@gmail.com</LI>
