@@ -1,7 +1,8 @@
 
 import styled from "styled-components"
-import { FaFacebookF, FaPinterestP } from 'react-icons/fa'
-import { BsInstagram, BsTwitter } from 'react-icons/bs'
+import { FaFacebookF, FaPinterestP, FaMapMarkerAlt } from 'react-icons/fa'
+import { BsInstagram, BsTwitter, BsTelephoneOutboundFill } from 'react-icons/bs'
+import { HiMail } from 'react-icons/hi'
 
 const Container = styled.div`
     display: flex;
@@ -52,10 +53,13 @@ const UL = styled.div`
 const LI = styled.li`
     padding: 0;
     margin: 5px 30px;
-    list-style: none; 
+    list-style: none;
+    display: flex;
+    align-items: center;
 `
 const Right = styled.div`
     flex: 1;
+    padding: 20px;
 `
 
 
@@ -97,9 +101,17 @@ const Footer = () => {
                     <LI>Accessory</LI>
                     <LI>Watch</LI>
                     <LI>Products</LI>
-                </UL></Links>
+                </UL>
+                </Links>
             </Center>
-            <Right></Right>
+            <Right>
+            <Title>USEFUL LINKS</Title>
+            <UL>
+                    <LI><BsTelephoneOutboundFill size='16' style={{ marginRight: '10px'}} />+123 456 789</LI>
+                    <LI><HiMail size='16' style={{ marginRight: '10px'}} />contact@gmail.com</LI>
+                    <LI><FaMapMarkerAlt size='16' style={{ marginRight: '10px'}} />downtown street 35 on the corner</LI>
+                </UL>
+            </Right>
         </Container>
     )
 }
