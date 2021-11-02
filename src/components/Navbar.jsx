@@ -108,7 +108,9 @@ const Navbar = () => {
                     </SearchContainer>
                 </Left>
                 <Center>
+                    <Link to='/' style={{ textDecoration: 'none', color: 'black' }} >
                     <Logo>L0G0!</Logo>
+                    </Link>
                 </Center>
                 <Right>
                     <MenuItem><Link to='/regester'><Button bg='blue'>REGESTER</Button></Link></MenuItem>
