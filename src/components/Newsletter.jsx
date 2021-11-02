@@ -48,6 +48,7 @@ const Icon = styled.div`
     justify-content: center;
     align-items: center;
     border: 0.5px solid gray;
+    cursor: pointer;
 `
 
 const Newsletter = () => {

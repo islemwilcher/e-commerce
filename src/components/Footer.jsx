@@ -50,6 +50,7 @@ const Media = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 `
 const Center = styled.div`
     flex: 1;
@@ -76,6 +77,7 @@ const LI = styled.li`
     list-style: none;
     display: flex;
     align-items: center;
+    cursor: pointer;
 `
 const Right = styled.div`
     flex: 1;
@@ -135,7 +137,7 @@ const Footer = () => {
                     <LI><BsTelephoneOutboundFill size='16' style={{ marginRight: '10px'}} />+123 456 789</LI>
                     <LI><HiMail size='16' style={{ marginRight: '10px'}} />contact@gmail.com</LI>
                     <LI><FaMapMarkerAlt size='16' style={{ marginRight: '10px'}} />downtown street 35 on the corner</LI>
-                </UL>
+            </UL>
             </Right>
         </Container>
     )
