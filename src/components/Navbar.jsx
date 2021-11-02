@@ -1,4 +1,5 @@
 
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 import { FiSearch } from 'react-icons/fi'
@@ -23,8 +24,7 @@ const Wrapper = styled.div`
 
     @media(max-width: 768px) {
         flex-direction: column-reverse;
-        
-    justify-content: center;
+        justify-content: center;
         height: 20vh !important;
     }
 `
@@ -81,6 +81,20 @@ const MenuItem = styled.div`
     cursor: pointer;
     margin-left: 25px;
 `
+const Button = styled.button`
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: ${props=>props.bg};
+  cursor: pointer;
+  border: none;
+  color: black;
+  &:hover {
+      border-radius: 5px;
+      box-shadow: 1px 1px 3px black;
+      font-weight: 700;
+  }
+`
 
 const Navbar = () => {
     return (
@@ -97,12 +111,14 @@ const Navbar = () => {
                     <Logo>L0G0!</Logo>
                 </Center>
                 <Right>
-                    <MenuItem>REGESTER</MenuItem>
-                    <MenuItem>sign in</MenuItem>
+                    <MenuItem><Link to='/regester'><Button bg='blue'>REGESTER</Button></Link></MenuItem>
+                    <MenuItem><Link to='/signin'><Button bg='blue'>SIGN IN</Button></Link></MenuItem>
                     <MenuItem>
+                    <Button bg='transparent'>
                     <Badge badgeContent={1} color='primary'>
                         <IoMdCart size='25px' />
                     </Badge>
+                    </Button>
                     </MenuItem>
                 </Right>
             </Wrapper>
