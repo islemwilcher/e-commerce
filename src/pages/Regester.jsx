@@ -34,10 +34,10 @@ const Title = styled.h3`
 const Input = styled.input`
     border: none;
     width: 100%;
-    padding: 5px;
     padding: 8px 20px;
-    margin-top: 10px; 
+    margin-top: 10px;
 `
+
 const Button = styled.button`
     padding: 10px;
     font-size: 20px;
