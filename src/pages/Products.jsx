@@ -9,7 +9,6 @@ const Category = () => {
         <>
             <Announcement />
             <Navbar />
-            
             <Products />
             <Footer />
         </>
